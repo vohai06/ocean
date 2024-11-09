@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.bg
+{
+    position: relative;
+    width: 100%;
+    left: 0;
+    height: 700px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.dolphin 
+{
+    width:230px; height:190px;
+    transform: rotateY(180deg);
+    position:absolute;
+    top: 350px; left:15px;
+    animation: dolphin 14s linear 0.25s;
+    animation-iteration-count:infinite;
+}
+@keyframes dolphin
+{
+    0%   {left:10px; top:380px;}
+    25%  {left:30%; top:350px;}
+    50%  {left:70%; top:325px;}
+    80%  {left:85%; top:225px;}
+    100% {left:15px; top:380px;  transform:rotateY(0deg);}
+}
+.dca 
+{
+    position: absolute;
+    animation-name: dca;
+    transform: rotateY(-90deg);
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes dca 
+{
+    0%   {right:20px; top:50px;}
+    25%  {right:30%; top:125px;}
+    50%  {right:70%; top:325px;}
+    80%  {right:50%; top:280px;}
+    100% {right:15px; top:190px;  transform: rotateY(180deg);}
+}
+
+.tlan1 
+{
+    transform: rotate(-90deg);
+    width:90px; height:80px;
+    position:absolute;
+    top:320px; left:3%;
+    animation: tlan1 25s ease-in-out 0.2s;
+    animation-iteration-count:infinite;
+}
+@keyframes tlan1 
+{
+    0% {top:300px; left:20%;}
+    50% {top:-18px; left:20%;}
+    100% {top: 315px; left:20%; transform:rotate(90deg);}
+}
+.tlan2 
+{
+    position: absolute;
+    animation-name: tlan2;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes tlan2
+{
+    0%   {right:25px; top:380px;}
+    25%  {right:30%; top:350px;}
+    35%  {right:50%; top:200px;}
+    50%  {right:70%; top:250px;}
+    80%  {right:85%; top:350px;}
+    100% {right:25px; top:380px;transform: rotateY(180deg);}
+}
+.sua 
+{
+    transform: rotate(0deg);
+    width:90px; height:80px;
+    position:absolute;
+    top:300px; left:75%;
+    animation: sua 40s ease-in-out 0.3s;
+    animation-iteration-count:infinite;
+}
+@keyframes sua 
+{
+    0% {top:300px; left:75%;}
+    50% {top:20px; left:75%;}
+    100% {top: 290px; left:75%; transform:rotate(70deg);}
+}
+.fish1 
+{
+    width:150px; height:120px;
+    position:absolute;
+    top: 300px; left:22%;
+    animation: fish1 20s linear 0.5s;
+    animation-iteration-count:infinite;
+}
+@keyframes fish1
+ {
+    0%   {left:20px; top:230px; transform: rotateY(0deg);}
+    25%  {left:30%; top:350px; transform: rotateY(0deg);}
+    50%  {left:70%; top:325px; transform: rotateY(0deg);}
+    80%  {left:50%; top:280px; transform: rotateY(180deg);}
+    100% {left:15px; top:190px;  transform: rotateY(180deg);}
+}
